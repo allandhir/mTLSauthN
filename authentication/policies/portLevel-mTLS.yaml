@@ -1,0 +1,16 @@
+apiVersion: "security.istio.io/v1beta1"
+kind: "PeerAuthentication"
+metadata:
+  name: "portlevel-peerauthentication"
+  namespace: "foo"
+spec:
+  selector:
+    matchLabels:
+      app: auth-test
+  mtls:
+    mode: STRICT
+  portLevelMtls:
+    8001:
+      mode: STRICT
+#   8002:     #you must have a service exposing 8002 else no effect
+#     mode: PERMISSIVE
