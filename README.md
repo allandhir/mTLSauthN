@@ -1,2 +1,2 @@
 # testIstio
-Understanding Istio Authentication Policy
+Testing MERN stack application on kubernetes with Istio service Mesh
