@@ -1,2 +1,2 @@
 # testIstio
-Understangin Peer Authentication in Istio
+Understanding Peer Authentication in Istio
